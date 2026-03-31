@@ -1,6 +1,6 @@
 {
   "name": "pong-cli",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A faithful CLI recreation of the classic 1972 Atari Pong arcade game with real-time terminal rendering",
   "main": "src/index.js",
   "bin": {
