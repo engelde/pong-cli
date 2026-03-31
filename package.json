@@ -1,0 +1,56 @@
+{
+  "name": "pong-cli",
+  "version": "1.0.0",
+  "description": "A faithful CLI recreation of the classic 1972 Atari Pong arcade game with real-time terminal rendering",
+  "main": "src/index.js",
+  "bin": {
+    "pong": "bin/pong.js",
+    "pong-cli": "bin/pong.js"
+  },
+  "scripts": {
+    "start": "node bin/pong.js",
+    "lint": "biome check .",
+    "lint:fix": "biome check --write .",
+    "format": "biome format --write .",
+    "test": "node --test test/*.test.js",
+    "prepare": "husky"
+  },
+  "keywords": [
+    "pong",
+    "cli",
+    "game",
+    "retro",
+    "arcade",
+    "terminal",
+    "atari"
+  ],
+  "author": "David Engel",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/engelde/pong-cli.git"
+  },
+  "homepage": "https://github.com/engelde/pong-cli#readme",
+  "bugs": {
+    "url": "https://github.com/engelde/pong-cli/issues"
+  },
+  "files": [
+    "bin/",
+    "src/",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "terminal-kit": "^3.1.2"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.4.9",
+    "@commitlint/cli": "^20.5.0",
+    "@commitlint/config-conventional": "^20.5.0",
+    "husky": "^9.1.7"
+  }
+}
